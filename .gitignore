@@ -1,0 +1,13 @@
+# OS関連
+.DS_Store
+Thumbs.db
+
+# エディタ関連
+.vscode/
+.idea/
+
+# npmやビルドツールを使う場合（未使用なら不要）
+node_modules/
+dist/
+build/
+.env
