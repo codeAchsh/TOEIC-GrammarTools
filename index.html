@@ -5,11 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TOEIC Grammar Tools</title>
 
+  <!-- ページの説明 -->
+  <meta name="description" content="TOEICでつまづきやすい文法ポイントを、やさしく整理した学習アプリをまとめています。例文付きで、語尾や品詞の理解をサポートします。" />
 
+  <!-- SEO関連（description, keywords） -->
+  <meta name="keywords" content="TOEIC, grammar, suffixes, parts of speech, English learning, intuitive tools, calm design, TOEIC文法, 語尾分類, 品詞, 穏やかな学習, TOEIC対策, 英語学習ツール" />
+
+  <!-- SNSでの表示を整える（OpenGraph）-->
+  <meta property="og:title" content="TOEIC Grammar Tools / TOEIC文法ツール集" />
+  <meta property="og:description" content="このプロジェクトは、TOEIC学習者向けに文法や語尾に関するつまづきやすいポイントを、シンプルなWebアプリとしてまとめたものです。例文付きで、品詞の語尾や文法構造を直感的に学べます。<br>
+  今後は、同様の学習アプリを追加しながら、まとめて販売できる形に整えていく予定です。現在は無料公開中ですが、学習支援を目的とした個人利用に限ります。" />
+  <meta property="og:image" content="https://github.com/codeAchsh/TOEIC-GrammarTools/blob/main/assets/images/TOEIC-thumbnail.png" />
+  <meta property="og:url" content="https://codeachsh.github.io/TOEIC-GrammarTools/" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicon & Styles -->
   <link rel="shortcut icon" href="assets/images/MyIcon.ico" />  
   <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P16Z7PRNNF');
+  </script>  
+
 </head>
 <body>
   <header>
@@ -45,6 +68,56 @@
       <!-- 今後追加するツールはここに上から順に -->
     </section>
   </main>
+
+  <!-- 🍃 Consent Management & Google Analytics -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const consent = localStorage.getItem('gentleConsent');
+      if (!consent) {
+        const banner = document.createElement('div');
+        banner.id = 'gentle-banner';
+        banner.style = `
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #f0f4f8;
+          padding: 1em;
+          text-align: center;
+          font-size: 0.95em;
+          box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+          z-index: 9999;
+        `;
+        banner.innerHTML = `
+          このサイトでは、学習改善のためにGoogleアナリティクスを使用しています。<br>
+          利用に同意いただける場合は「同意する」をクリックしてください。
+          <button onclick="acceptConsent()" style="margin-left: 1em; padding: 0.4em 1em;">同意する</button>
+        `;
+        document.body.appendChild(banner);
+      } else {
+        loadAnalytics();
+      }
+    });
+
+    function acceptConsent() {
+      localStorage.setItem('gentleConsent', 'true');
+      const banner = document.getElementById('gentle-banner');
+      if (banner) banner.remove();
+      loadAnalytics();
+    }
+
+    function loadAnalytics() {
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF';
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P16Z7PRNNF');
+    }
+  </script>
 
   <footer>
       <div class="ad-template-link">
