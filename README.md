@@ -20,7 +20,7 @@
 | 2025-09-03   | [類義語で学ぶ：前置詞・接続詞・接続副詞](https://codeachsh.github.io/TOEIC-grammar-synonym-for-transition-words/) |
 | 2025-09-15   | [前置詞をイメージで学ぶ](https://codeachsh.github.io/TOEIC-grammar-for-prepositions/) |
 | 2025-09-21   | [関係詞を学ぶ：関係代名詞・関係副詞・複合関係詞](https://codeachsh.github.io/TOEIC-grammar-for-relative-words/) |
-| 2025-10-05   | ペア表現を学ぶ：both, either, neither など（※有料販売セットに含まれます）
+| 2025-10-06   | ペア表現を学ぶ：both, either, neither など（※有料販売セットに含まれます）
 
 ---
 
@@ -42,3 +42,4 @@
 ```bash
 git clone https://github.com/codeAchsh/TOEIC-GrammarTools.git
 cd TOEIC-GrammarTools
+
